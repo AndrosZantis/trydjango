@@ -1,0 +1,2 @@
+# trydjango
+ I am learning
