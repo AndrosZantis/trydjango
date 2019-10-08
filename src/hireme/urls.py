@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
+from pages.views import home_view,contact_view
+#from person.views import blahblaj
+#look for a url inside here, then look for the view
 urlpatterns = [
+    url('',home_view,name = 'home.html'),
+    url('about/',contact_view,name = 'about.html'),
     url(r'^admin/', admin.site.urls),
 ]
